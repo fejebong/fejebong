@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Pages publiques FEJEB
+Allow: /index.html
+Allow: /apropos.html
+Allow: /actions.html
+Allow: /equipe.html
+Allow: /actualites.html
+Allow: /don.html
+Allow: /contact.html
+Allow: /fiche-signalétique.html
+
+# Bloquer fichiers techniques inutiles
+Disallow: /vercel.json
+Disallow: /*.json$
+
+# Sitemap
+Sitemap: https://fejebong.org/sitemap.xml
