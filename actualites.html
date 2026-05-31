@@ -1962,7 +1962,7 @@
 
         if (detailTitle) detailTitle.textContent = safeText(row.titre) || "Sans titre";
         if (detailMeta) detailMeta.innerHTML = "<span>" + date + "</span><span>•</span><span>" + cat + "</span>";
-        if (detailContent) detailContent.textContent = stripHtml(row.contenu) || "—";
+        if (detailContent) detailContent.innerHTML = row.contenu || "—";
         if (detailImg) setImg(detailImg, row.image);
 
         const shareUrl = buildShareUrl(row);
