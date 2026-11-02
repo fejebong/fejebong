@@ -1,1198 +1,355 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCNXHXHFKN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-XCNXHXHFKN');
-</script>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="format-detection" content="telephone=no" />
-
-  <title>À propos — ONG FEJEB | Identité, mission, vision, gouvernance</title>
-  <meta name="description" content="Découvrez l’ONG FEJEB (Femmes, Enfants et Jeunes Épanouis du Bénin) : identité, vision, mission, valeurs, domaines d’intervention, publics cibles, gouvernance et engagement de transparence." />
-  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <meta name="theme-color" content="#0B5ED7" />
-  <meta name="color-scheme" content="light" />
-
-  <link rel="canonical" href="https://fejebong.org/apropos.html" />
-  <link rel="alternate" hreflang="fr" href="https://fejebong.org/apropos.html" />
-  <link rel="alternate" hreflang="x-default" href="https://fejebong.org/apropos.html" />
-
-  <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="ONG FEJEB" />
-  <meta property="og:title" content="À propos — ONG FEJEB" />
-  <meta property="og:description" content="Identité, vision, mission, valeurs, domaines d’intervention, publics cibles, gouvernance et transparence." />
-  <meta property="og:url" content="https://fejebong.org/apropos.html" />
-  <meta property="og:image" content="https://fejebong.org/fond.jpg" />
-  <meta property="og:image:secure_url" content="https://fejebong.org/fond.jpg" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="À propos — ONG FEJEB" />
-  <meta name="twitter:description" content="Découvrez FEJEB : identité, mission, vision, gouvernance et transparence." />
-  <meta name="twitter:image" content="https://fejebong.org/fond.jpg" />
-
-  <!-- Favicon (TES FICHIERS) -->
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <link rel="apple-touch-icon" href="favicon.png" />
-
-  <style>
-    /* =========================
-       FEJEB — À PROPOS (Institutionnel)
-       CSS intégré (1 seul fichier : apropos.html)
-       Base identique à index.html
-       ========================= */
-
-    :root{
-      --ink: #0b1220;
-      --muted: #42526b;
-      --card: rgba(255,255,255,.92);
-      --card-strong: rgba(255,255,255,.96);
-      --stroke: rgba(15, 23, 42, .12);
-
-      --brand-blue: #0B5ED7;
-      --brand-green: #00A86B;
-      --brand-cyan: #00B3C8;
-
-      --shadow: 0 18px 55px rgba(2, 8, 23, .14);
-      --shadow-soft: 0 10px 28px rgba(2, 8, 23, .10);
-
-      --radius-xl: 22px;
-      --radius-lg: 16px;
-      --radius-md: 12px;
-
-      --container: 1160px;
-
-      /* Lisibilité : tailles confort */
-      --fs-base: 18px;
-      --lh-base: 1.65;
-      --fs-sm: 16px;
-      --fs-lg: 20px;
-      --fs-xl: 40px;
-      --fs-h2: 28px;
-      --fs-h3: 20px;
-
-      --gap: 18px;
-    }
-
-    *{ box-sizing: border-box; }
-    html{ scroll-behavior: smooth; }
-    body{
-      margin: 0;
-      color: var(--ink);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      font-size: var(--fs-base);
-      line-height: var(--lh-base);
-
-      /* Fond arc-en-ciel “pro” : pastel + overlay pour lisibilité */
-      background:
-        radial-gradient(1200px 900px at 10% 10%, rgba(0,168,107,.18), transparent 60%),
-        radial-gradient(900px 700px at 85% 15%, rgba(11,94,215,.18), transparent 55%),
-        radial-gradient(900px 700px at 20% 85%, rgba(255,107,107,.12), transparent 55%),
-        radial-gradient(900px 700px at 85% 85%, rgba(255,193,7,.12), transparent 55%),
-        linear-gradient(135deg,
-          rgba(255, 0, 150, .10),
-          rgba(0, 204, 255, .10),
-          rgba(0, 200, 83, .10),
-          rgba(255, 193, 7, .10),
-          rgba(156, 39, 176, .10)
-        );
-      min-height: 100vh;
-      overflow-x: hidden;
-    }
-
-    body::before{
-      content:"";
-      position: fixed;
-      inset: 0;
-      pointer-events:none;
-      background: linear-gradient(180deg, rgba(255,255,255,.42), rgba(255,255,255,.22));
-      z-index: -1;
-    }
-
-    a{ color: inherit; }
-    img{ max-width: 100%; height: auto; }
-    .sr-only{
-      position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
-    }
-
-    .skip-link{
-      position: absolute;
-      top: 10px; left: 10px;
-      padding: 10px 12px;
-      background: var(--card-strong);
-      border: 1px solid var(--stroke);
-      border-radius: 12px;
-      box-shadow: var(--shadow-soft);
-      transform: translateY(-140%);
-      transition: transform .2s ease;
-      z-index: 9999;
-    }
-    .skip-link:focus{ transform: translateY(0); outline: 3px solid rgba(11,94,215,.25); }
-
-    .container{
-      width: min(var(--container), calc(100% - 32px));
-      margin: 0 auto;
-    }
-
-    /* =========================
-       Header / Nav (identique)
-       ========================= */
-    .site-header{
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      background: rgba(255,255,255,.70);
-      border-bottom: 1px solid var(--stroke);
-    }
-
-    .header-inner{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 12px 0;
-      gap: 12px;
-    }
-
-    .brand{
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      min-width: 220px;
-    }
-
-    .logo{
-      width: 44px; height: 44px;
-      border-radius: 14px;
-      display: grid;
-      place-items: center;
-      background: rgba(255,255,255,.82);
-      box-shadow: 0 10px 24px rgba(2,8,23,.08);
-      border: 1px solid rgba(15,23,42,.12);
-      overflow: hidden;
-      flex: 0 0 auto;
-    }
-    .logo img{
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-      padding: 6px;
-      display: block;
-    }
-
-    .brand-title{
-      display: flex;
-      flex-direction: column;
-      line-height: 1.15;
-    }
-    .brand-title strong{
-      font-size: 16px;
-      letter-spacing: .2px;
-    }
-    .brand-title span{
-      font-size: 13px;
-      color: var(--muted);
-    }
-
-    .nav{
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .nav-links{
-      display: none;
-      align-items: center;
-      gap: 6px;
-      padding: 6px;
-      border-radius: 999px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.72);
-    }
-
-    .nav-links a{
-      text-decoration: none;
-      font-size: 15px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      color: rgba(11,18,32,.92);
-      transition: background .18s ease, transform .18s ease;
-      white-space: nowrap;
-    }
-    .nav-links a:hover{
-      background: rgba(11,94,215,.08);
-      transform: translateY(-1px);
-    }
-    .nav-links a[aria-current="page"]{
-    background: rgba(11,94,215,.10);
-    border: 1px solid rgba(11,94,215,.18);
-  }
-    .btn{
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px 14px;
-      border-radius: 999px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.78);
-      box-shadow: 0 10px 24px rgba(2,8,23,.06);
-      font-weight: 700;
-      text-decoration: none;
-      transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
-      cursor: pointer;
-      user-select: none;
-      font-size: 16px;
-    }
-    .btn:hover{ transform: translateY(-1px); box-shadow: 0 16px 34px rgba(2,8,23,.10); }
-    .btn:active{ transform: translateY(0px); }
-
-    .btn-primary{
-      border-color: rgba(11,94,215,.28);
-      background: linear-gradient(135deg, rgba(11,94,215,.98), rgba(0,168,107,.90));
-      color: #fff;
-    }
-    .btn-primary:hover{
-      background: linear-gradient(135deg, rgba(11,94,215,1), rgba(0,168,107,.98));
-    }
-
-    .btn-ghost{
-      background: rgba(255,255,255,.65);
-    }
-
-    .menu-btn{
-      width: 46px; height: 46px;
-      border-radius: 16px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.76);
-      display: grid;
-      place-items: center;
-      box-shadow: 0 10px 24px rgba(2,8,23,.06);
-      cursor: pointer;
-    }
-    .menu-btn svg{ width: 22px; height: 22px; }
-
-    @media (min-width: 1020px){
-      .nav-links{ display: flex; }
-      .menu-btn{ display: none; }
-    }
-
-    /* =========================
-       Mobile Drawer (scrollable)
-       ========================= */
-    .drawer-backdrop{
-      position: fixed;
-      inset: 0;
-      background: rgba(2,8,23,.36);
-      display: none;
-      z-index: 1200;
-    }
-    .drawer{
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      left: 10px;
-      max-width: 560px;
-      margin-left: auto;
-      background: rgba(255,255,255,.92);
-      border: 1px solid var(--stroke);
-      border-radius: var(--radius-xl);
-      box-shadow: var(--shadow);
-      display: none;
-      z-index: 1300;
-      overflow: hidden;
-    }
-    .drawer-head{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 14px 10px 14px;
-      border-bottom: 1px solid var(--stroke);
-      background: rgba(255,255,255,.86);
-    }
-    .drawer-title{
-      font-weight: 900;
-      letter-spacing: .2px;
-      font-size: 16px;
-    }
-    .drawer-close{
-      width: 42px; height: 42px;
-      border-radius: 14px;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.8);
-      display: grid;
-      place-items: center;
-      cursor: pointer;
-    }
-    .drawer-body{
-      max-height: min(70vh, 520px);
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      padding: 10px 14px 14px 14px;
-    }
-    .drawer-nav{
-      display: grid;
-      gap: 10px;
-    }
-    .drawer-nav a{
-      text-decoration: none;
-      padding: 12px 12px;
-      border-radius: 16px;
-      border: 1px solid rgba(15,23,42,.10);
-      background: rgba(255,255,255,.78);
-      font-weight: 700;
-      font-size: 16px;
-    }
-    .drawer-actions{
-      display: grid;
-      gap: 10px;
-      margin-top: 12px;
-      padding-top: 12px;
-      border-top: 1px dashed rgba(15,23,42,.18);
-    }
-
-    .is-open .drawer-backdrop{ display: block; }
-    .is-open .drawer{ display: block; }
-
-    /* =========================
-       Main / Sections
-       ========================= */
-    main{ padding: 26px 0 56px; }
-
-    /* HERO (même identité que index) */
-    .hero{
-      margin-top: 14px;
-      border-radius: calc(var(--radius-xl) + 6px);
-      border: 1px solid var(--stroke);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      position: relative;
-
-      background:
-        linear-gradient(90deg, rgba(2,8,23,.78) 0%, rgba(2,8,23,.52) 42%, rgba(2,8,23,.22) 100%),
-        radial-gradient(900px 480px at 20% 0%, rgba(0,168,107,.22), transparent 60%),
-        radial-gradient(900px 480px at 65% 0%, rgba(11,94,215,.22), transparent 60%),
-        url("fond.jpg");
-      background-size: cover;
-      background-position: center;
-    }
-    .hero-inner{
-      padding: 38px 18px;
-      display: grid;
-      gap: 16px;
-    }
-    @media (min-width: 920px){
-      .hero-inner{
-        grid-template-columns: 1.15fr .85fr;
-        align-items: center;
-        padding: 52px 40px;
-      }
-    }
-
-    .badge{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(255,255,255,.22);
-      background: rgba(255,255,255,.12);
-      color: rgba(255,255,255,.92);
-      font-weight: 800;
-      width: fit-content;
-      font-size: 14px;
-      backdrop-filter: blur(8px);
-      -webkit-backdrop-filter: blur(8px);
-      text-shadow: 0 10px 20px rgba(0,0,0,.28);
-    }
-    .badge i{
-      width: 10px; height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--brand-blue), var(--brand-green));
-      display: inline-block;
-    }
-
-    h1{
-      margin: 10px 0 10px;
-      font-size: clamp(30px, 4vw, var(--fs-xl));
-      line-height: 1.12;
-      letter-spacing: -0.4px;
-      color: #fff;
-      text-shadow: 0 10px 30px rgba(0,0,0,.35);
-    }
-    .lead{
-      margin: 0;
-      color: rgba(255,255,255,.92);
-      font-size: 19px;
-      max-width: 62ch;
-      text-shadow: 0 10px 26px rgba(0,0,0,.28);
-    }
-
-    .hero-cta{
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-top: 14px;
-    }
-    .hero-cta .btn{
-      border-color: rgba(255,255,255,.22);
-    }
-    .hero-cta .btn-ghost{
-      background: rgba(255,255,255,.14);
-      color: #fff;
-      border-color: rgba(255,255,255,.28);
-    }
-    .hero-cta .btn-ghost:hover{
-      background: rgba(255,255,255,.18);
-    }
-
-    .hero-panel{
-      padding: 16px;
-      border-radius: var(--radius-xl);
-      background: rgba(255,255,255,.14);
-      border: 1px solid rgba(255,255,255,.22);
-      box-shadow: 0 18px 55px rgba(0,0,0,.22);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-    }
-    .hero-panel h3{
-      margin: 0 0 8px;
-      font-size: 18px;
-      letter-spacing: .2px;
-      color: #fff;
-      text-shadow: 0 10px 20px rgba(0,0,0,.28);
-    }
-    .hero-panel p{
-      margin: 0;
-      color: rgba(255,255,255,.90);
-      font-size: 16px;
-      line-height: 1.6;
-      text-shadow: 0 10px 20px rgba(0,0,0,.22);
-    }
-
-    .section{
-      margin-top: 22px;
-      padding: 18px;
-      border-radius: var(--radius-xl);
-      border: 1px solid var(--stroke);
-      background: var(--card);
-      box-shadow: var(--shadow-soft);
-    }
-    @media (min-width: 900px){
-      .section{ padding: 24px; }
-    }
-
-    .section-head{
-      display: flex;
-      align-items: end;
-      justify-content: space-between;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin-bottom: 14px;
-    }
-    .section-head h2{
-      margin: 0;
-      font-size: clamp(22px, 2.6vw, var(--fs-h2));
-      line-height: 1.2;
-      letter-spacing: -0.2px;
-    }
-    .section-head p{
-      margin: 0;
-      color: var(--muted);
-      font-size: 16px;
-      max-width: 78ch;
-    }
-
-    .grid{
-      display: grid;
-      gap: var(--gap);
-    }
-    @media (min-width: 780px){
-      .grid.cols-3{ grid-template-columns: repeat(3, 1fr); }
-      .grid.cols-4{ grid-template-columns: repeat(4, 1fr); }
-      .grid.cols-2{ grid-template-columns: repeat(2, 1fr); }
-    }
-
-    .card{
-      padding: 16px;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(15,23,42,.10);
-      background: rgba(255,255,255,.86);
-      box-shadow: 0 14px 30px rgba(2,8,23,.06);
-      position: relative;
-      overflow: hidden;
-    }
-    .card::before{
-      content:"";
-      position: absolute;
-      inset: 0;
-      pointer-events: none;
-      background:
-        linear-gradient(135deg, rgba(11,94,215,.10), transparent 42%),
-        linear-gradient(225deg, rgba(0,168,107,.10), transparent 42%);
-      opacity: .75;
-    }
-    .card > *{ position: relative; z-index: 1; }
-    .card h3{
-      margin: 0 0 8px;
-      font-size: var(--fs-h3);
-      line-height: 1.25;
-    }
-    .card p{
-      margin: 0;
-      color: var(--muted);
-      font-size: 16px;
-      line-height: 1.6;
-    }
-
-    .list{
-      display: grid;
-      gap: 12px;
-    }
-    .list-item{
-      padding: 14px 14px;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(15,23,42,.10);
-      background: rgba(255,255,255,.86);
-      display: grid;
-      gap: 6px;
-    }
-    .list-item b{
-      font-size: 17px;
-      letter-spacing: .1px;
-    }
-    .list-item small{
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.55;
-    }
-
-    .quote{
-      padding: 16px;
-      border-radius: var(--radius-xl);
-      border: 1px dashed rgba(11,94,215,.22);
-      background: rgba(11,94,215,.06);
-      color: rgba(11,18,32,.92);
-    }
-    .quote b{ display:block; margin-bottom: 6px; }
-    .quote span{ color: var(--muted); font-size: 16px; }
-
-    .pillline{
-      display:flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-    .pill{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      background: rgba(255,255,255,.78);
-      border: 1px solid rgba(15,23,42,.10);
-      font-weight: 800;
-      font-size: 14px;
-      color: rgba(11,18,32,.92);
-      box-shadow: 0 10px 24px rgba(2,8,23,.06);
-    }
-    .pill i{
-      width: 10px; height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--brand-blue), var(--brand-green));
-      display: inline-block;
-    }
-
-    /* Badge gouvernance (Président/Présidente) */
-    .role-badge{
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 10px 12px;
-      border-radius: 999px;
-      border: 1px solid rgba(11,94,215,.18);
-      background: rgba(11,94,215,.07);
-      font-weight: 900;
-      font-size: 14px;
-      width: fit-content;
-    }
-    .role-badge i{
-      width: 10px; height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--brand-blue), var(--brand-green));
-      display: inline-block;
-    }
-
-    .cta-band{
-      display: grid;
-      gap: 12px;
-      align-items: center;
-      padding: 18px;
-      border-radius: var(--radius-xl);
-      border: 1px solid rgba(11,94,215,.18);
-      background:
-        radial-gradient(700px 320px at 20% 20%, rgba(0,168,107,.16), transparent 60%),
-        radial-gradient(700px 320px at 80% 20%, rgba(11,94,215,.16), transparent 60%),
-        rgba(255,255,255,.90);
-      box-shadow: var(--shadow-soft);
-    }
-    @media (min-width: 900px){
-      .cta-band{
-        grid-template-columns: 1.2fr .8fr;
-        padding: 22px 22px;
-      }
-    }
-    .cta-band h3{ margin: 0 0 6px; font-size: 22px; }
-    .cta-band p{ margin: 0; color: var(--muted); font-size: 16px; }
-    .cta-band .actions{ display:flex; flex-wrap: wrap; gap: 10px; justify-content: flex-start; }
-    @media (min-width: 900px){ .cta-band .actions{ justify-content: flex-end; } }
-
-    /* Footer (identité validée) */
-    footer{
-      padding: 34px 0 46px;
-      color: rgba(11,18,32,.88);
-    }
-
-    .footer-box{
-      border-radius: var(--radius-xl);
-      border: 1px solid rgba(255,255,255,.10);
-      background:
-        radial-gradient(900px 380px at 10% 0%, rgba(0,168,107,.25), transparent 60%),
-        radial-gradient(900px 380px at 70% 0%, rgba(11,94,215,.25), transparent 60%),
-        linear-gradient(135deg, #0B1B33, #062048);
-      box-shadow: var(--shadow);
-      padding: 18px;
-      color: rgba(255,255,255,.92);
-    }
-    .footer-box p{
-      margin: 0;
-      font-size: 15.5px;
-      line-height: 1.7;
-      color: rgba(255,255,255,.86);
-    }
-    .footer-box .line{
-      margin-top: 8px;
-      padding-top: 10px;
-      border-top: 1px dashed rgba(255,255,255,.22);
-      color: rgba(255,255,255,.82);
-    }
-
-    @media (prefers-reduced-motion: reduce){
-      html{ scroll-behavior: auto; }
-      .btn, .nav-links a{ transition: none; }
-    }
-
-    :focus-visible{
-      outline: 3px solid rgba(11,94,215,.24);
-      outline-offset: 2px;
-      border-radius: 10px;
-    }
-  </style>
-
-  <!-- Schema.org (Organisation + Site + AboutPage + Breadcrumb) -->
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@graph":[
-      {
-        "@type":"Organization",
-        "@id":"https://fejebong.org/#organization",
-        "name":"ONG FEJEB",
-        "legalName":"FEJEB (Femmes, Enfants et Jeunes Épanouis du Bénin)",
-        "description":"Organisation Non Gouvernementale à but non lucratif, apolitique et laïque. FEJEB œuvre pour l’épanouissement des femmes, enfants et jeunes au Bénin : éducation, santé, protection sociale, autonomisation et développement durable.",
-        "url":"https://fejebong.org/",
-        "logo":"https://fejebong.org/logo.png",
-        "image":"https://fejebong.org/fond.jpg",
-        "email":"fejeb.ong@gmail.com",
-        "telephone":[ "+2290148484048", "+2290155268484" ],
-        "areaServed":"BJ",
-        "address":{
-          "@type":"PostalAddress",
-          "addressCountry":"BJ",
-          "addressRegion":"Borgou",
-          "addressLocality":"Nikki",
-          "streetAddress":"Quartier Gah-Maro (Nikki)"
-        },
-        "sameAs":[
-          "https://www.facebook.com/profile.php?id=61574007833322"
-        ]
-      },
-      {
-        "@type":"WebSite",
-        "@id":"https://fejebong.org/#website",
-        "url":"https://fejebong.org/",
-        "name":"ONG FEJEB",
-        "publisher":{"@id":"https://fejebong.org/#organization"},
-        "inLanguage":"fr"
-      },
-      {
-        "@type":"AboutPage",
-        "@id":"https://fejebong.org/apropos.html#aboutpage",
-        "url":"https://fejebong.org/apropos.html",
-        "name":"À propos — ONG FEJEB",
-        "isPartOf":{"@id":"https://fejebong.org/#website"},
-        "about":{"@id":"https://fejebong.org/#organization"},
-        "inLanguage":"fr"
-      },
-      {
-        "@type":"BreadcrumbList",
-        "@id":"https://fejebong.org/apropos.html#breadcrumb",
-        "itemListElement":[
-          {"@type":"ListItem","position":1,"name":"Accueil","item":"https://fejebong.org/"},
-          {"@type":"ListItem","position":2,"name":"À propos","item":"https://fejebong.org/apropos.html"}
-        ]
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>À propos - ONG FEJEB, Nikki (Bénin)</title>
+<meta name="description" content="Identité, objet, parcours et organisation de l’ONG FEJEB (Femmes Enfants et Jeunes Epanouis du Bénin), basée à Nikki, dans le Borgou.">
+<link rel="canonical" href="https://www.fejebong.org/apropos.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="À propos - ONG FEJEB">
+<meta property="og:description" content="Identité, objet, parcours et organisation de l’ONG FEJEB, à Nikki (Borgou, Bénin).">
+<meta property="og:url" content="https://www.fejebong.org/apropos.html">
+<meta property="og:image" content="https://www.fejebong.org/logo.png">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@500&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NGO","name":"ONG FEJEB","legalName":"Femmes Enfants et Jeunes Epanouis du Bénin","alternateName":"FEJEB","url":"https://www.fejebong.org/","logo":"https://www.fejebong.org/logo.png","slogan":"Femmes, Enfants et Jeunes, tous capables !","email":"fejeb.ong@gmail.com","telephone":["+2290148484048","+2290161929244"],"sameAs":["https://www.facebook.com/profile.php?id=61574007833322"],"address":{"@type":"PostalAddress","streetAddress":"Quartier Gah-Maro","addressLocality":"Nikki","addressRegion":"Borgou","addressCountry":"BJ"}}</script>
+<style>
+:root{--g:#0E5A3A;--gd:#093D27;--iv:#FAF8F3;--ink:#16221B;--tx:#33423A;--mu:#5A6A61;--ln:#DAD5C7;--oc:#B48A2C;--serif:'Source Serif 4',Georgia,serif;--sans:'Source Sans 3',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font:400 16px/1.65 var(--sans);color:var(--tx);background:var(--iv)}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px}.skip:focus{left:12px;top:12px;background:#fff;padding:8px 12px;z-index:100}
+:focus-visible{outline:2px solid var(--oc);outline-offset:2px}
+.legal{background:var(--gd);color:#E9EFE9;font-size:12px;padding:7px 0}
+header{position:sticky;top:0;z-index:50;background:var(--iv);border-bottom:1px solid var(--ln)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 20px;transition:padding .25s}
+header.sm .bar{padding:7px 20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:46px;height:46px;border-radius:50%;transition:width .25s,height .25s}
+header.sm .brand img{width:36px;height:36px}
+.brand b{font:500 18px/1.15 var(--serif);color:var(--ink);display:block}
+.brand small{font-size:12px;color:var(--mu);display:block}
+nav ul{display:flex;gap:20px;list-style:none;padding:0;align-items:center}
+nav a{text-decoration:none;font-size:14px;color:var(--tx);padding:4px 0;border-bottom:2px solid transparent;white-space:nowrap}
+nav a:hover,nav a[aria-current]{border-color:var(--oc);color:var(--ink)}
+.btn{display:inline-block;background:var(--g);color:#fff;padding:10px 18px;border-radius:4px;text-decoration:none;font-weight:500;font-size:14px;border:1px solid var(--g)}
+.btn:hover{background:var(--gd)}
+nav a.btn{color:#fff;padding:9px 16px;border:1px solid var(--g)}
+.btn.l{background:var(--iv);color:var(--gd);border-color:var(--iv)}
+.btn.o{background:transparent;color:#fff;border-color:#E4EDE6}
+.btn.o:hover{background:rgba(255,255,255,.12)}
+.tg{display:none;background:none;border:1px solid var(--ln);border-radius:4px;padding:8px 12px;font:500 14px var(--sans);color:var(--ink);cursor:pointer}
+.hero{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);background:var(--g);color:#fff}
+.hero-t{display:flex;align-items:center;padding:64px 48px 64px max(20px,calc((100vw - 1120px)/2 + 20px))}
+.hero i{display:block;width:48px;height:2px;background:var(--oc);margin-bottom:22px}
+h1{font:500 clamp(30px,4.2vw,46px)/1.15 var(--serif);max-width:14em}
+.hero p{max-width:30em;margin:18px 0 28px;color:#E4EDE6;font-size:17px}
+.hero-p{position:relative;margin:0;height:clamp(420px,36vw,560px);background:#0A4A2F}
+.hero-p img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 55%}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));background:#fff;border-bottom:1px solid var(--ln)}
+.facts div{padding:20px 24px;border-right:1px solid var(--ln)}
+.facts dt{font-size:13px;color:var(--mu)}
+.facts dd{font:500 16px/1.4 var(--serif);color:var(--ink);margin-top:2px}
+.sec{padding:64px 0}
+.sec.w{background:#fff;border-top:1px solid var(--ln);border-bottom:1px solid var(--ln)}
+h2{font:500 clamp(24px,3.2vw,32px)/1.2 var(--serif);color:var(--ink);margin-bottom:12px}
+.lead{max-width:46em;color:var(--mu);margin-bottom:30px}
+.more{display:inline-block;margin-top:14px;color:var(--g);font-weight:500;text-underline-offset:3px}
+.axes{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:var(--ln);border:1px solid var(--ln)}
+.axes article{background:var(--iv);padding:22px 22px 24px}
+.axes h3{font:500 18px/1.3 var(--serif);color:var(--ink);margin-bottom:6px}
+.axes p{font-size:14.5px;color:var(--mu)}
+.news{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:24px}
+.card{display:block;text-decoration:none;background:#fff;border:1px solid var(--ln);transition:border-color .2s}
+.card:hover{border-color:var(--g)}
+.card img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;background:#E9E5D8}
+.card div{padding:18px 20px 22px}
+.card time{font-size:13px;color:var(--mu)}
+.card h3{font:500 19px/1.3 var(--serif);color:var(--ink);margin:4px 0 8px}
+.card p{font-size:14.5px;color:var(--tx)}
+.empty{padding:28px;border:1px dashed var(--ln);background:#fff;color:var(--mu)}
+.tr{background:var(--gd);color:#fff;padding:52px 0}
+.tr .wrap{display:flex;gap:28px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.tr h2{color:#fff;margin-bottom:8px}
+.tr p{max-width:40em;color:#D5E3D9}
+.sup{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px}
+.sup a{padding:12px 20px;border:1px solid var(--g);color:var(--g);text-decoration:none;font-weight:500;border-radius:4px}
+.sup a:hover{background:var(--g);color:#fff}
+footer{background:#06291B;color:#C9D8CE;font-size:14.5px;padding:52px 0 0}
+.fg{display:grid;grid-template-columns:1.4fr 1fr 1.2fr 1.3fr;gap:32px}
+footer h4{font:500 16px var(--serif);color:#fff;margin-bottom:10px}
+footer ul{list-style:none;padding:0}
+footer li{margin-bottom:6px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.fb{margin-top:40px;border-top:1px solid #1B4634;padding:16px 0;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:13px}
+#bd{position:fixed;inset:0;background:rgba(9,61,39,.45);opacity:0;pointer-events:none;transition:opacity .3s;z-index:55}
+#bd.on{opacity:1;pointer-events:auto}
+#top{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:42px;height:42px;border-radius:50%;border:0;background:var(--g);color:#fff;font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s}
+#top.on{opacity:1;pointer-events:auto}
+@media(min-width:981px) and (max-width:1200px){.brand small{display:none}}
+@media(max-width:980px){
+.tg{display:block}
+nav{position:fixed;top:0;right:0;bottom:0;width:min(80vw,320px);background:var(--gd);transform:translateX(100%);visibility:hidden;transition:transform .3s,visibility .3s;padding:84px 26px 28px;overflow:auto;z-index:60;box-shadow:-10px 0 28px rgba(0,0,0,.25)}
+nav.open{transform:none;visibility:visible}
+nav ul{flex-direction:column;align-items:flex-start;gap:6px}
+nav a{color:#fff;font-size:19px;font-family:var(--serif)}
+nav a:hover,nav a[aria-current]{color:#fff}
+nav a.btn{margin-top:14px;font-family:var(--sans);font-size:16px;background:var(--iv);color:var(--gd)}
+.tg.x{position:fixed;right:20px;top:18px;z-index:70;background:var(--iv)}
+.fg{grid-template-columns:1fr 1fr}
+}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-t{padding:48px 20px 44px}.hero-p{height:auto;aspect-ratio:1569/1002}}
+@media(max-width:560px){.fg{grid-template-columns:1fr}.sec{padding:48px 0}}
+.ph{background:var(--g);color:#fff;padding:56px 0 48px}
+.ph i{display:block;width:48px;height:2px;background:var(--oc);margin-bottom:20px}
+.ph h1{font-size:clamp(28px,4vw,40px);max-width:none}
+.ph p{max-width:38em;margin-top:10px;color:#E4EDE6;font-size:17px}
+.prose p{max-width:46em;margin-bottom:14px}
+dl.id{display:grid;grid-template-columns:minmax(140px,230px) 1fr;border:1px solid var(--ln);background:#fff}
+dl.id dt,dl.id dd{padding:14px 18px;border-bottom:1px solid var(--ln)}
+dl.id dt{font-size:14px;color:var(--mu);background:var(--iv)}
+dl.id dd{font:500 16px/1.45 var(--serif);color:var(--ink)}
+dl.id dt:last-of-type,dl.id dd:last-of-type{border-bottom:0}
+.em{display:flex;gap:32px;align-items:center;flex-wrap:wrap}
+.em img{width:150px;height:150px;border-radius:50%;flex:none}
+.em p{max-width:36em}
+ol.tl{list-style:none;padding:0;margin:0 0 0 6px;border-left:2px solid var(--ln)}
+ol.tl li{position:relative;padding:0 0 24px 26px}
+ol.tl li::before{content:"";position:absolute;left:-8px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--g);border:3px solid #fff}
+ol.tl time{display:block;font:500 18px/1.3 var(--serif);color:var(--ink)}
+ol.tl p{max-width:42em;font-size:15px;color:var(--tx)}
+.note{margin-top:22px;max-width:46em;font-size:14.5px;color:var(--mu)}
+details{background:#fff;border:1px solid var(--ln);margin-bottom:10px}
+details summary{cursor:pointer;padding:16px 20px;font:500 17px/1.4 var(--serif);color:var(--ink);list-style:none;display:flex;justify-content:space-between;gap:16px}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:"+";color:var(--g);font-size:22px;line-height:1}
+details[open] summary::after{content:"−"}
+details>div{padding:0 20px 18px;max-width:50em;color:var(--tx)}
+details>div p+p{margin-top:8px}
+.vm{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-bottom:30px}
+.vm h3{font:500 20px/1.3 var(--serif);color:var(--ink);margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
+.chips span{border:1px solid var(--ln);border-top:2px solid var(--g);background:#fff;padding:8px 16px;font:500 16px var(--serif);color:var(--ink)}
+.sub{font:500 18px var(--serif);color:var(--ink);margin:26px 0 4px}
+.axes.n article h3::before{content:attr(data-n);display:block;font:500 14px var(--sans);color:var(--oc);margin-bottom:4px}
+@media(max-width:560px){dl.id{grid-template-columns:1fr}dl.id dt{border-bottom:0;padding-bottom:0}.em img{width:120px;height:120px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
 </head>
-
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu principal</a>
+<a class="skip" href="#main">Aller au contenu</a>
+<div class="legal"><div class="wrap">ONG enregistrée sous le n° 2024/N°0400/MISP/DC/SGM/DAIC/SACC/SA - Nikki, Borgou, Bénin</div></div>
 
-  <!-- Header -->
-  <header class="site-header" role="banner">
-    <div class="container">
-      <div class="header-inner">
-        <a class="brand" href="index.html" aria-label="ONG FEJEB — Accueil">
-          <div class="logo" aria-hidden="true">
-            <img src="logo.png" alt="" />
-          </div>
-          <div class="brand-title">
-            <strong>ONG FEJEB</strong>
-            <span>Femmes • Enfants • Jeunes — Bénin</span>
-          </div>
-        </a>
+<header id="hd">
+<div class="wrap bar">
+<a class="brand" href="index.html" aria-label="ONG FEJEB, accueil"><img src="logo.png" alt="" width="46" height="46"><span><b>ONG FEJEB</b><small>Femmes, Enfants et Jeunes Épanouis du Bénin</small></span></a>
+<div id="bd"></div>
+<button class="tg" id="tg" aria-expanded="false" aria-controls="nv">Menu</button>
+<nav id="nv" aria-label="Navigation principale">
+<ul>
+<li><a href="index.html">Accueil</a></li>
+<li><a href="apropos.html" aria-current="page">À propos</a></li>
+<li><a href="actions.html">Actions</a></li>
+<li><a href="transparence.html">Transparence</a></li>
+<li><a href="equipe.html">Équipe</a></li>
+<li><a href="actualites.html">Actualités</a></li>
+<li><a href="galerie.html">Galerie</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a class="btn" href="soutenir.html">Nous soutenir</a></li>
+</ul>
+</nav>
+</div>
+</header>
 
-        <nav class="nav" aria-label="Navigation principale">
-          <div class="nav-links" aria-label="Liens de navigation (bureau)">
-            <a href="index.html">Accueil</a>
-            <a href="apropos.html" aria-current="page">À propos</a>
-            <a href="actions.html">Actions</a>
-            <a href="fiche-signalétique.html">Fiche signalétique</a>
-            <a href="equipe.html">Équipe</a>
-            <a href="actualites.html">Actualités</a>
-            <a href="galerie.html">Galerie</a>
-            <a href="don.html">Don</a>
-            <a href="contact.html">Contact</a>
-          </div>
+<main id="main">
+<section class="ph">
+<div class="wrap">
+<i></i>
+<h1>À propos de l’ONG FEJEB</h1>
+<p>Qui nous sommes, ce qui nous guide et comment nous sommes organisés.</p>
+</div>
+</section>
 
-          <a class="btn btn-primary" href="don.html" aria-label="Aller à la page Don">Faire un don</a>
+<section class="sec">
+<div class="wrap">
+<h2>Notre identité</h2>
+<p class="lead">Les repères essentiels de l’organisation.</p>
+<dl class="id">
+<dt>Dénomination</dt><dd>Femmes Enfants et Jeunes Epanouis du Bénin</dd>
+<dt>Sigle</dt><dd>FEJEB</dd>
+<dt>Devise</dt><dd>Femmes, Enfants et Jeunes, tous capables !</dd>
+<dt>Nature</dt><dd>Organisation non gouvernementale, apolitique, laïque et à but non lucratif, de durée illimitée</dd>
+<dt>Siège</dt><dd>Maison Adamou Bio Manè, quartier Gah-Maro, arrondissement central de Nikki, Borgou</dd>
+<dt>Zone d’intervention</dt><dd>Territoire national, Bénin</dd>
+<dt>Cadre juridique</dt><dd>Loi n° 2025-19 du 22 juillet 2025 relative aux associations et aux fondations en République du Bénin</dd>
+</dl>
+</div>
+</section>
 
-          <button class="menu-btn" id="openMenu" type="button" aria-label="Ouvrir le menu" aria-controls="mobileDrawer" aria-expanded="false">
-            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-              <path d="M4 7h16" stroke="#0b1220" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M4 12h16" stroke="#0b1220" stroke-width="1.8" stroke-linecap="round"/>
-              <path d="M4 17h16" stroke="#0b1220" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </button>
-        </nav>
-      </div>
-    </div>
-  </header>
+<section class="sec w">
+<div class="wrap prose">
+<h2>Notre objet</h2>
+<p>L’ONG FEJEB a pour objet de contribuer au développement humain durable et inclusif au Bénin, en œuvrant pour l’épanouissement, la protection et l’autonomisation des femmes, des enfants et des jeunes, à travers des actions intégrées dans les domaines social, économique, éducatif, sanitaire et environnemental.</p>
+<p>Son but est d’améliorer les conditions de vie des populations, en particulier des jeunes, des femmes et des groupes vulnérables, par la promotion de l’éducation, de la formation, de la citoyenneté, de la santé, de la paix et de l’autonomisation socio-économique.</p>
+<a class="more" href="actions.html">Voir nos domaines d’intervention</a>
+</div>
+</section>
 
-  <!-- Mobile Drawer -->
-  <div class="drawer-backdrop" id="drawerBackdrop" hidden></div>
-  <aside class="drawer" id="mobileDrawer" role="dialog" aria-modal="true" aria-label="Menu mobile" hidden>
-    <div class="drawer-head">
-      <div class="drawer-title">Menu</div>
-      <button class="drawer-close" id="closeMenu" type="button" aria-label="Fermer le menu">
-        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <path d="M7 7l10 10" stroke="#0b1220" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M17 7L7 17" stroke="#0b1220" stroke-width="1.8" stroke-linecap="round"/>
-        </svg>
-      </button>
-    </div>
-    <div class="drawer-body">
-      <nav class="drawer-nav" aria-label="Navigation mobile (scrollable)">
-        <a href="index.html">Accueil</a>
-        <a href="apropos.html" aria-current="page">À propos</a>
-        <a href="actions.html">Actions</a>
-        <a href="fiche-signalétique.html">Fiche signalétique</a>
-        <a href="equipe.html">Équipe</a>
-        <a href="actualites.html">Actualités</a>
-        <a href="galerie.html">Galerie</a>
-        <a href="don.html">Don</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+<section class="sec">
+<div class="wrap">
+<h2>Vision, mission et valeurs</h2>
+<p class="lead">Ce que nous visons, ce que nous faisons et comment nous le faisons.</p>
+<div class="vm">
+<div><h3>Notre vision</h3><p>Œuvrer pour une société juste et inclusive où chaque femme, enfant et jeune est pleinement épanoui(e) et participe au développement durable de sa communauté.</p></div>
+<div><h3>Notre mission</h3><p>Contribuer à l’épanouissement intégral par l’accès aux droits fondamentaux, à l’éducation, à la santé, à la protection sociale et par l’autonomisation.</p></div>
+</div>
+<h3 class="sub">Nos valeurs</h3>
+<div class="chips"><span>Égalité</span><span>Respect</span><span>Solidarité</span><span>Empowerment</span><span>Transparence</span></div>
+<h3 class="sub">Nos principes d’action</h3>
+<div class="chips"><span>Approche participative</span><span>Protection des vulnérables</span><span>Résultats mesurables</span><span>Redevabilité</span></div>
+</div>
+</section>
 
-      <div class="drawer-actions">
-        <a class="btn btn-primary" href="don.html">Faire un don</a>
-        <a class="btn btn-ghost" href="contact.html">Nous contacter</a>
-      </div>
-    </div>
-  </aside>
+<section class="sec w">
+<div class="wrap">
+<h2>Les personnes auprès de qui nous agissons</h2>
+<p class="lead">Nos interventions s’adressent aux groupes les plus exposés aux risques sociaux et économiques.</p>
+<div class="axes">
+<article><h3>Femmes</h3><p>Rurales et urbaines, pour l’égalité des chances et l’autonomisation.</p></article>
+<article><h3>Jeunes</h3><p>Filles et garçons, pour la formation, l’insertion et la citoyenneté.</p></article>
+<article><h3>Enfants vulnérables</h3><p>Orphelins, en difficulté ou en situation de handicap.</p></article>
+<article><h3>Communautés locales</h3><p>Leaders et acteurs communautaires, pour la cohésion sociale et la paix.</p></article>
+</div>
+</div>
+</section>
 
-  <main id="contenu" class="container" role="main">
-    <!-- HERO -->
-    <section class="hero" aria-label="À propos de l’ONG FEJEB">
-      <div class="hero-inner">
-        <div>
-          <div class="badge"><i></i> À propos • Identité • Mission • Gouvernance</div>
-          <h1>À propos de FEJEB</h1>
-          <p class="lead">
-            FEJEB (Femmes, Enfants et Jeunes Épanouis du Bénin) est une ONG à but non lucratif, apolitique et laïque,
-            basée à Nikki (Borgou). Nous agissons avec les communautés pour renforcer les droits, la santé, l’éducation
-            et l’autonomisation, dans une logique d’impact durable.
-          </p>
+<section class="sec">
+<div class="wrap">
+<h2>Notre approche de travail</h2>
+<p class="lead">Une méthode orientée terrain : écouter, co-construire, agir, mesurer et améliorer.</p>
+<div class="axes n">
+<article><h3 data-n="Étape 1">Diagnostic et écoute communautaire</h3><p>Identification des besoins réels, cartographie des priorités et compréhension des contextes locaux.</p></article>
+<article><h3 data-n="Étape 2">Co-construction des solutions</h3><p>Implication des acteurs locaux (leaders, jeunes, femmes, services) pour des actions acceptées et efficaces.</p></article>
+<article><h3 data-n="Étape 3">Mise en œuvre et mobilisation</h3><p>Sensibilisations, formations, accompagnements et appuis matériels ou organisationnels selon les projets.</p></article>
+<article><h3 data-n="Étape 4">Suivi, évaluation et apprentissage</h3><p>Suivi des résultats, collecte d’indicateurs et amélioration continue pour maximiser l’impact.</p></article>
+</div>
+</div>
+</section>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="actions.html">Voir nos actions</a>
-            <a class="btn btn-ghost" href="contact.html">Nous contacter</a>
-          </div>
-        </div>
+<section class="sec w">
+<div class="wrap">
+<h2>Notre emblème</h2>
+<div class="em">
+<img src="logo.png" alt="Logo de l’ONG FEJEB" width="150" height="150" loading="lazy">
+<p>Notre logo représente une jeune femme, un enfant et un jeune homme, tous les trois le bras levé. Il accompagne notre devise : Femmes, Enfants et Jeunes, tous capables !</p>
+</div>
+</div>
+</section>
 
-        <div class="hero-panel" aria-label="Repères institutionnels">
-          <h3>Repères</h3>
-          <p>
-            <b>Siège :</b> Quartier Gah-Maro, Nikki (Borgou), Bénin<br/>
-            <b>Email :</b> fejeb.ong@gmail.com<br/>
-            <b>Tél :</b> +229 01 48 48 40 48 • +229 01 55 26 84 84<br/>
-            <b>Statut :</b> ONG apolitique & laïque
-          </p>
-        </div>
-      </div>
-    </section>
+<section class="sec">
+<div class="wrap">
+<h2>Notre parcours</h2>
+<p class="lead">Les étapes officielles de la vie de l’organisation.</p>
+<ol class="tl">
+<li><time>20 juillet 2024</time><p>Assemblée générale constitutive.</p></li>
+<li><time>31 octobre 2024</time><p>Récépissé de déclaration délivré par le ministre de l’Intérieur et de la Sécurité publique.</p></li>
+<li><time>1er décembre 2024</time><p>Publication de la déclaration au Journal officiel de la République du Bénin.</p></li>
+<li><time>14 février 2025</time><p>Immatriculation fiscale de l’organisation.</p></li>
+<li><time>20 janvier 2026</time><p>Adoption des statuts et du règlement intérieur réaménagés, en assemblée générale extraordinaire à Nikki.</p></li>
+<li><time>5 février 2026</time><p>Dépôt de la déclaration de mise en conformité auprès de la Direction des Affaires intérieures et des Cultes.</p></li>
+</ol>
+<p class="note">Les documents correspondants sont présentés sur la page <a href="transparence.html" style="color:var(--g)">Transparence</a>.</p>
+</div>
+</section>
 
-    <!-- IDENTITÉ -->
-    <section class="section" aria-label="Identité et raison d’être">
-      <div class="section-head">
-        <div>
-          <h2>Identité & raison d’être</h2>
-          <p>Une organisation centrée sur la dignité humaine, l’inclusion et l’amélioration durable des conditions de vie.</p>
-        </div>
-      </div>
+<section class="sec w">
+<div class="wrap">
+<h2>Notre organisation</h2>
+<p class="lead">Quatre organes. Selon nos statuts, les fonctions exercées au sein des organes ne sont pas rémunérées.</p>
+<div class="axes">
+<article><h3>Assemblée générale</h3><p>Organe suprême de l’ONG. Elle définit l’orientation générale, élit les membres des organes, vote le budget et peut modifier les statuts.</p></article>
+<article><h3>Conseil d’administration</h3><p>Sept membres élus pour trois ans renouvelables. Il veille à la bonne gestion administrative et au bon fonctionnement de l’organisation.</p></article>
+<article><h3>Bureau exécutif</h3><p>Trois membres : le directeur exécutif, le chargé de programme et l’assistant administratif et financier. Il élabore et met en œuvre les programmes.</p></article>
+<article><h3>Commissariat aux comptes</h3><p>Trois commissaires qui contrôlent la gestion financière et le patrimoine de l’organisation, avec une vérification au moins une fois par an.</p></article>
+</div>
+<a class="more" href="equipe.html">Découvrir l’équipe</a>
+</div>
+</section>
 
-      <div class="grid cols-2">
-        <article class="card">
-          <h3>Qui sommes-nous ?</h3>
-          <p>
-            FEJEB œuvre pour l’épanouissement des femmes, des enfants et des jeunes, à travers des actions sociales,
-            éducatives, sanitaires et environnementales. Notre engagement repose sur l’écoute des besoins locaux,
-            la mobilisation communautaire et des partenariats utiles.
-          </p>
-        </article>
+<section class="sec">
+<div class="wrap">
+<h2>Comment nous sommes financés et contrôlés</h2>
+<p class="lead">Ce que prévoient nos statuts en matière de ressources, de dons et de contrôle des comptes.</p>
+<div class="axes">
+<article><h3>Nos ressources</h3><p>Droits d’adhésion, cotisations annuelles des membres, souscriptions, subventions, dons et legs, et fonds négociés auprès de partenaires locaux ou étrangers.</p></article>
+<article><h3>Un compte au nom de l’ONG</h3><p>Les ressources financières sont domiciliées dans un compte ouvert, dans une institution financière ou bancaire, au nom et pour le compte de l’organisation.</p></article>
+<article><h3>Des dons encadrés</h3><p>L’acceptation des subventions, dons et legs est soumise à l’approbation du Conseil d’administration et du Bureau exécutif.</p></article>
+<article><h3>Des comptes vérifiés</h3><p>Trois commissaires aux comptes vérifient les opérations de l’ONG au moins une fois par an. L’exercice court du 1er janvier au 31 décembre.</p></article>
+<article><h3>Un rapport annuel</h3><p>L’organisation présente chaque année un rapport d’activités et des états financiers. Des copies sont accessibles sur demande à tout membre ou partenaire.</p></article>
+<article><h3>Aucun bénéfice distribué</h3><p>L’ONG est à but non lucratif. En cas de dissolution, l’actif net est attribué à une institution de même nature ou à des œuvres d’intérêt social ou humanitaire.</p></article>
+</div>
+</div>
+</section>
 
-        <article class="card">
-          <h3>Notre engagement</h3>
-          <p>
-            Nous recherchons des solutions réalistes et mesurables : prévention, sensibilisation, accompagnement,
-            formation, et appui aux initiatives locales — avec une attention particulière aux personnes vulnérables.
-          </p>
-        </article>
-      </div>
+<section class="sec w">
+<div class="wrap prose">
+<h2>Nos membres</h2>
+<p>L’organisation se compose de membres fondateurs, de membres actifs, de membres d’honneur et de sympathisants. Toute personne physique ou morale qui adhère aux statuts peut devenir membre actif.</p>
+<a class="more" href="soutenir.html#membre">Devenir membre</a>
+</div>
+</section>
 
-      <div style="height:14px"></div>
+<section class="sec">
+<div class="wrap">
+<h2>Questions fréquentes</h2>
+<p class="lead">Les réponses que l’on nous demande le plus souvent.</p>
+<details><summary>Où l’ONG intervient-elle ?</summary><div><p>Sur l’ensemble du territoire national du Bénin, depuis son siège à Nikki, dans le Borgou.</p></div></details>
+<details><summary>L’ONG est-elle une organisation politique ou religieuse ?</summary><div><p>Non. L’ONG FEJEB est apolitique, laïque et à but non lucratif.</p></div></details>
+<details><summary>L’ONG FEJEB est-elle une organisation officielle ?</summary><div><p>Oui. Elle a reçu un récépissé de déclaration du ministre de l’Intérieur et de la Sécurité publique le 31 octobre 2024, publié au Journal officiel de la République du Bénin le 1er décembre 2024.</p><p>Ses statuts ont été réaménagés le 20 janvier 2026, et la déclaration de mise en conformité a été déposée le 5 février 2026.</p></div></details>
+<details><summary>Qui dirige l’organisation ?</summary><div><p>Le Conseil d’administration est présidé par la Dr Jamillah Kissira Maurat Faladé. Le directeur exécutif est Imorou Moumouni, à la tête du bureau exécutif qui met en œuvre les programmes.</p><p>Les membres des organes sont élus par l’assemblée générale, au scrutin libre, transparent et anonyme, pour trois ans renouvelables. Toute l’équipe est présentée sur la page <a href="equipe.html" style="color:var(--g)">Équipe</a>.</p></div></details>
+<details><summary>Quand l’assemblée générale se réunit-elle ?</summary><div><p>Une fois par an en session ordinaire, dans les six mois qui suivent la clôture de l’exercice financier. Le conseil d’administration y présente le rapport annuel de l’ONG, et le commissariat aux comptes y présente son propre rapport.</p></div></details>
+<details><summary>Comment devenir membre ?</summary><div><p>Il faut déposer un formulaire de demande d’adhésion, une copie d’une pièce d’identité, une photo d’identité et la quittance de versement des droits d’adhésion : 5 000 FCFA pour une personne physique, 10 000 FCFA pour une personne morale.</p><p>La cotisation annuelle de 10 000 FCFA se règle avant le 30 juin. <a href="soutenir.html#membre" style="color:var(--g)">Voir comment adhérer</a>.</p></div></details>
+<details><summary>Comment les dons sont-ils encadrés ?</summary><div><p>Les ressources de l’ONG sont déposées sur un compte ouvert à son nom. L’acceptation des dons est approuvée par le Conseil d’administration et le Bureau exécutif, et les comptes sont vérifiés chaque année par les commissaires aux comptes.</p></div></details>
+<details><summary>Un membre peut-il contester une décision ?</summary><div><p>Oui. Il dépose une plainte écrite au siège, qui est examinée par le conseil d’administration. S’il n’est pas satisfait de la décision, il peut saisir l’assemblée générale.</p><p>Toute plainte doit recevoir une réponse écrite dans un délai de deux mois.</p></div></details>
+<details><summary>Quels documents l’ONG conserve-t-elle à son siège ?</summary><div><p>Un registre tenu au siège contient les statuts, le règlement intérieur, les procès-verbaux des assemblées et des réunions du bureau exécutif, la liste des membres des organes avec la durée de leur mandat, et le point des cotisations.</p></div></details>
+<details><summary>Où trouver les documents officiels ?</summary><div><p>Les références de nos documents officiels sont présentées sur la page <a href="transparence.html" style="color:var(--g)">Transparence</a>.</p></div></details>
+<details><summary>Comment nous contacter ?</summary><div><p>Notre siège est à la Maison Adamou Bio Manè, quartier Gah-Maro, à Nikki (Borgou). Vous pouvez nous joindre au +229 01 48 48 40 48 ou au +229 01 61 92 92 44, ou par email à fejeb.ong@gmail.com. <a href="contact.html" style="color:var(--g)">Page contact</a>.</p></div></details>
+</div>
+</section>
+</main>
 
-      <div class="quote" role="note" aria-label="Positionnement institutionnel">
-        <b>Positionnement</b>
-        <span>
-          ONG à but non lucratif, apolitique et laïque — FEJEB agit au Bénin, depuis Nikki (Borgou),
-          pour renforcer les capacités des communautés et promouvoir le développement durable.
-        </span>
-      </div>
-    </section>
+<footer>
+<div class="wrap">
+<div class="fg">
+<div><h4>ONG FEJEB</h4><p>Femmes Enfants et Jeunes Epanouis du Bénin.<br>Femmes, Enfants et Jeunes, tous capables !</p></div>
+<div><h4>Navigation</h4><ul><li><a href="apropos.html">À propos</a></li><li><a href="actions.html">Actions</a></li><li><a href="transparence.html">Transparence</a></li><li><a href="equipe.html">Équipe</a></li><li><a href="actualites.html">Actualités</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+<div><h4>Contact</h4><ul><li>Maison Adamou Bio Manè, quartier Gah-Maro, Nikki (Borgou)</li><li><a href="tel:+2290148484048">+229 01 48 48 40 48</a></li><li><a href="tel:+2290161929244">+229 01 61 92 92 44</a></li><li><a href="mailto:fejeb.ong@gmail.com">fejeb.ong@gmail.com</a></li><li><a href="https://www.facebook.com/profile.php?id=61574007833322" target="_blank" rel="noopener">Facebook</a></li></ul></div>
+<div><h4>Mentions</h4><p>Organisation non gouvernementale enregistrée sous le n° 2024/N°0400/MISP/DC/SGM/DAIC/SACC/SA.</p><p style="margin-top:8px"><a href="transparence.html">Documents officiels</a></p></div>
+</div>
+<div class="fb"><span>© 2026 ONG FEJEB. Tous droits réservés.</span><span>Site conçu par <a href="https://wa.me/2290191175358" target="_blank" rel="noopener">DineTech</a></span></div>
+</div>
+</footer>
+<button id="top" aria-label="Retour en haut">↑</button>
 
-    <!-- VISION / MISSION / VALEURS -->
-    <section class="section" aria-label="Vision, mission et valeurs">
-      <div class="section-head">
-        <div>
-          <h2>Vision, mission & valeurs</h2>
-          <p>Notre boussole stratégique : ce que nous visons, ce que nous faisons, et comment nous le faisons.</p>
-        </div>
-      </div>
+<script>
+(function(){
+var bd=document.getElementById('bd'),hd=document.getElementById('hd'),nv=document.getElementById('nv'),tg=document.getElementById('tg'),top=document.getElementById('top');
+function menu(o){nv.classList.toggle('open',o);bd.classList.toggle('on',o);tg.classList.toggle('x',o);tg.textContent=o?'Fermer':'Menu';tg.setAttribute('aria-expanded',o);document.body.style.overflow=o?'hidden':''}
+tg.onclick=function(){menu(!nv.classList.contains('open'))};
+bd.onclick=function(){menu(false)};
+nv.addEventListener('click',function(e){if(e.target.tagName==='A')menu(false)});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')menu(false)});
+addEventListener('scroll',function(){hd.classList.toggle('sm',scrollY>60);top.classList.toggle('on',scrollY>600)},{passive:true});
+top.onclick=function(){scrollTo({top:0})};
 
-      <div class="grid cols-3">
-        <article class="card">
-          <h3>Vision</h3>
-          <p>
-            Œuvrer pour une société juste et inclusive où chaque femme, enfant et jeune est pleinement épanoui(e)
-            et participe au développement durable de sa communauté.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Mission</h3>
-          <p>
-            Contribuer à l’épanouissement intégral par l’accès aux droits fondamentaux, à l’éducation, à la santé,
-            à la protection sociale, et par l’autonomisation.
-          </p>
-        </article>
-        <article class="card">
-          <h3>Valeurs</h3>
-          <p>
-            Égalité • Respect • Solidarité • Empowerment • Transparence — des principes qui guident nos décisions,
-            notre éthique et notre action sur le terrain.
-          </p>
-        </article>
-      </div>
-
-      <div style="height:12px"></div>
-      <div class="pillline" aria-label="Principes d’action">
-        <span class="pill"><i></i> Approche participative</span>
-        <span class="pill"><i></i> Protection des vulnérables</span>
-        <span class="pill"><i></i> Résultats mesurables</span>
-        <span class="pill"><i></i> Redevabilité</span>
-      </div>
-    </section>
-
-    <!-- DOMAINES -->
-    <section class="section" aria-label="Domaines d’intervention">
-      <div class="section-head">
-        <div>
-          <h2>Domaines d’intervention</h2>
-          <p>Nos programmes s’inscrivent dans des priorités sociales, sanitaires, éducatives et environnementales.</p>
-        </div>
-        <a class="btn btn-ghost" href="actions.html">Voir les actions</a>
-      </div>
-
-      <div class="grid cols-4">
-        <article class="card"><h3>Santé communautaire</h3><p>Prévention, sensibilisation, accès à des services adaptés et promotion du bien-être.</p></article>
-        <article class="card"><h3>Éducation & droits humains</h3><p>Promotion de l’apprentissage, inclusion, citoyenneté et protection des droits.</p></article>
-        <article class="card"><h3>Protection sociale</h3><p>Accompagnement, soutien et réponses adaptées aux vulnérabilités.</p></article>
-        <article class="card"><h3>Autonomisation</h3><p>Formation, employabilité, leadership et initiatives génératrices de revenus.</p></article>
-        <article class="card"><h3>Eau, hygiène & assainissement</h3><p>Actions WASH, sensibilisation et pratiques durables au niveau communautaire.</p></article>
-        <article class="card"><h3>Paix & cohésion sociale</h3><p>Dialogue, prévention, vivre-ensemble et mobilisation communautaire.</p></article>
-        <article class="card"><h3>Environnement</h3><p>Reboisement, résilience, protection des ressources et éducation environnementale.</p></article>
-        <article class="card"><h3>Agriculture</h3><p>Appui aux initiatives locales et renforcement des moyens de subsistance.</p></article>
-      </div>
-    </section>
-
-    <!-- PUBLICS CIBLES -->
-    <section class="section" aria-label="Publics cibles">
-      <div class="section-head">
-        <div>
-          <h2>Publics cibles</h2>
-          <p>Nos interventions s’adressent prioritairement aux groupes les plus exposés aux risques sociaux et économiques.</p>
-        </div>
-      </div>
-
-      <div class="grid cols-4">
-        <article class="card"><h3>Femmes</h3><p>Rurales et urbaines, avec un focus sur l’autonomisation et l’égalité des chances.</p></article>
-        <article class="card"><h3>Jeunes</h3><p>Filles et garçons, pour l’insertion, la formation et la participation citoyenne.</p></article>
-        <article class="card"><h3>Enfants vulnérables</h3><p>Orphelins, en difficulté ou en situation de handicap.</p></article>
-        <article class="card"><h3>Communautés locales</h3><p>Leaders et acteurs communautaires, pour renforcer la cohésion et l’impact.</p></article>
-      </div>
-    </section>
-
-    <!-- APPROCHE -->
-    <section class="section" aria-label="Approche et méthode de travail">
-      <div class="section-head">
-        <div>
-          <h2>Approche de travail</h2>
-          <p>Une méthode orientée terrain : écouter, co-construire, agir, mesurer et améliorer.</p>
-        </div>
-      </div>
-
-      <div class="list" aria-label="Étapes de notre approche">
-        <div class="list-item">
-          <b>1) Diagnostic & écoute communautaire</b>
-          <small>Identification des besoins réels, cartographie des priorités, et compréhension des contextes locaux.</small>
-        </div>
-        <div class="list-item">
-          <b>2) Co-construction des solutions</b>
-          <small>Implication des acteurs locaux (leaders, jeunes, femmes, services) pour des actions acceptées et efficaces.</small>
-        </div>
-        <div class="list-item">
-          <b>3) Mise en œuvre & mobilisation</b>
-          <small>Activités de sensibilisation, formations, accompagnements et appuis matériels/organisationnels selon les projets.</small>
-        </div>
-        <div class="list-item">
-          <b>4) Suivi, évaluation & apprentissage</b>
-          <small>Suivi des résultats, collecte d’indicateurs et amélioration continue pour maximiser l’impact.</small>
-        </div>
-      </div>
-    </section>
-
-    <!-- GOUVERNANCE -->
-    <section class="section" aria-label="Gouvernance">
-      <div class="section-head">
-        <div>
-          <h2>Gouvernance</h2>
-          <p>Une organisation structurée avec un pilotage responsable, orienté résultats et redevabilité.</p>
-        </div>
-        <a class="btn btn-ghost" href="equipe.html">Voir l’équipe</a>
-      </div>
-
-      <div class="grid cols-3">
-        <article class="card">
-          <div class="role-badge"><i></i> Président / Présidente</div>
-          <div style="height:10px"></div>
-          <p>
-            <b>Nom :</b> Dr Jamillah KISSIRA MAURAT FALADE<br/>
-            <b>Rôle :</b> Orientation stratégique, représentation institutionnelle, supervision globale.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Organes & coordination</h3>
-          <p>
-            FEJEB s’appuie sur une coordination opérationnelle et une équipe engagée pour planifier, exécuter
-            et suivre les activités, dans le respect des valeurs et des objectifs de l’ONG.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Éthique & conformité</h3>
-          <p>
-            Apolitisme, laïcité, respect des personnes, protection des bénéficiaires, et conduite professionnelle
-            guident notre intervention sur le terrain.
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <!-- TRANSPARENCE -->
-    <section class="section" aria-label="Transparence et redevabilité">
-      <div class="section-head">
-        <div>
-          <h2>Transparence & redevabilité</h2>
-          <p>Nous renforçons la confiance par des pratiques claires : traçabilité, suivi et communication des résultats.</p>
-        </div>
-      </div>
-
-      <div class="grid cols-2">
-        <article class="card">
-          <h3>Gestion responsable</h3>
-          <p>
-            FEJEB encourage une gestion rigoureuse des ressources : planification, budgétisation, suivi des activités,
-            et documentation des réalisations pour appuyer la prise de décision et le reporting.
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Mesure d’impact</h3>
-          <p>
-            Nos projets intègrent des indicateurs simples et utiles : bénéficiaires touchés, activités réalisées,
-            résultats observés et leçons apprises pour améliorer nos interventions.
-          </p>
-        </article>
-      </div>
-
-      <div style="height:14px"></div>
-      <div class="quote" role="note" aria-label="Engagement de confiance">
-        <b>Engagement</b>
-        <span>
-          FEJEB travaille avec les communautés et les partenaires dans une logique de confiance, d’utilité et d’impact :
-          « ce qui est fait doit être documenté, expliqué, et amélioré ».
-        </span>
-      </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="section" aria-label="Partenariat et soutien">
-      <div class="cta-band">
-        <div>
-          <h3>Partenariats & soutien</h3>
-          <p>
-            Vous êtes une institution, une organisation, une entreprise ou un donateur ?
-            Contactez FEJEB pour co-construire un projet, financer une action ou soutenir durablement nos programmes.
-          </p>
-        </div>
-        <div class="actions">
-          <a class="btn btn-primary" href="contact.html">Proposer un partenariat</a>
-          <a class="btn btn-ghost" href="don.html">Nous soutenir</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-box">
-        <p><b>© FEJEB</b> — Tous droits réservés.</p>
-        <p>Organisation à but non lucratif, apolitique et laïque — Nikki (Borgou), République du Bénin.</p>
-        <p class="line"><b>Site réalisé par DineTech</b></p>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    /* =========================
-       FEJEB — JS (Menu mobile + accessibilité)
-       ========================= */
-
-    (function () {
-      const openBtn = document.getElementById("openMenu");
-      const closeBtn = document.getElementById("closeMenu");
-      const drawer = document.getElementById("mobileDrawer");
-      const backdrop = document.getElementById("drawerBackdrop");
-
-      if (!openBtn || !closeBtn || !drawer || !backdrop) return;
-
-      let lastFocus = null;
-
-      const setOpenState = (open) => {
-        document.body.classList.toggle("is-open", open);
-
-        drawer.hidden = !open;
-        backdrop.hidden = !open;
-
-        openBtn.setAttribute("aria-expanded", String(open));
-
-        if (open) {
-          lastFocus = document.activeElement;
-          const firstLink = drawer.querySelector("a, button");
-          if (firstLink) firstLink.focus();
-          document.body.style.overflow = "hidden";
-        } else {
-          document.body.style.overflow = "";
-          if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
-        }
-      };
-
-      const openMenu = () => setOpenState(true);
-      const closeMenu = () => setOpenState(false);
-
-      openBtn.addEventListener("click", openMenu);
-      closeBtn.addEventListener("click", closeMenu);
-      backdrop.addEventListener("click", closeMenu);
-
-      document.addEventListener("keydown", (e) => {
-        if (!document.body.classList.contains("is-open")) return;
-        if (e.key === "Escape") closeMenu();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (!document.body.classList.contains("is-open")) return;
-        if (e.key !== "Tab") return;
-
-        const focusable = drawer.querySelectorAll("a, button");
-        if (!focusable.length) return;
-
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-
-        if (e.shiftKey && document.activeElement === first) {
-          e.preventDefault();
-          last.focus();
-        } else if (!e.shiftKey && document.activeElement === last) {
-          e.preventDefault();
-          first.focus();
-        }
-      });
-
-      drawer.addEventListener("click", (e) => {
-        const a = e.target.closest("a");
-        if (!a) return;
-        closeMenu();
-      });
-    })();
-  </script>
+})();
+</script>
 </body>
 </html>
-
-
-
